@@ -1,0 +1,7 @@
+maven/cucumber/AppTest.class
+pages/HomePage.class
+stepdefinition/TestingSteps.class
+base/SetUpTest.class
+pages/SignUpPage.class
+pages/PracticePage.class
+tests/RunTest.class
