@@ -36,6 +36,7 @@ public class TestingSteps extends SetUpTest {
 
 	@When("^User clicks on GO button$")
 	public void user_clicks_on_GO_button() throws Throwable {
+		Thread.sleep(3000);
 		SignUpPage signPage = new SignUpPage(driver);
 		signPage.goButton();
 	}
