@@ -43,36 +43,35 @@ formatter.match({
   "location": "TestingSteps.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 29658309765,
+  "duration": 22298373715,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.user_enters_username_and_password()"
 });
 formatter.result({
-  "duration": 274810069,
+  "duration": 274001726,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.user_clicks_on_GO_button()"
 });
 formatter.result({
-  "duration": 265112411,
+  "duration": 247632668,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.he_can_visit_the_practice_page()"
 });
 formatter.result({
-  "duration": 5329905038,
+  "duration": 3725019028,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.a_message_is_displayed()"
 });
 formatter.result({
-  "duration": 56045307,
-  "error_message": "java.lang.AssertionError: \nExpecting:\n \u003c\"Lets Kode it\"\u003e\nto end with:\n \u003c\"Practice Page\"\u003e\n\n\tat stepdefinition.TestingSteps.a_message_is_displayed(TestingSteps.java:56)\n\tat ✽.And A message is displayed(logintest.feature:9)\n",
-  "status": "failed"
+  "duration": 481523471,
+  "status": "passed"
 });
 });
