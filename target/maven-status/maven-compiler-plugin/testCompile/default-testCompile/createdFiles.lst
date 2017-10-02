@@ -1,4 +1,3 @@
-maven/cucumber/AppTest.class
 pages/HomePage.class
 stepdefinition/TestingSteps.class
 base/SetUpTest.class

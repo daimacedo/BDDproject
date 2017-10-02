@@ -36,13 +36,14 @@ public class TestingSteps extends SetUpTest {
 
 	@When("^User clicks on GO button$")
 	public void user_clicks_on_GO_button() throws Throwable {
-		Thread.sleep(3000);
+		
 		SignUpPage signPage = new SignUpPage(driver);
 		signPage.goButton();
 	}
 
 	@Then("^He can visit the practice page$")
 	public void he_can_visit_the_practice_page() throws Throwable {
+		Thread.sleep(5000);
 		SignUpPage signPage = new SignUpPage(driver);
 		signPage.irParaPracticePage();
 		

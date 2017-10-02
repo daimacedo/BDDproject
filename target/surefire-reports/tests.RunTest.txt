@@ -1,4 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: tests.RunTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.839 sec
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 13.425 sec <<< FAILURE!
+And A message is displayed(Scenario: Login Sucessfull with valid credentials)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expecting:
+ <"Lets Kode it">
+to end with:
+ <"Practice Page">
+
+	at stepdefinition.TestingSteps.a_message_is_displayed(TestingSteps.java:57)
+	at ✽.And A message is displayed(logintest.feature:9)
+
+Scenario: Login Sucessfull with valid credentials  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expecting:
+ <"Lets Kode it">
+to end with:
+ <"Practice Page">
+
+	at stepdefinition.TestingSteps.a_message_is_displayed(TestingSteps.java:57)
+	at ✽.And A message is displayed(logintest.feature:9)
+
