@@ -1,7 +1,11 @@
 package stepdefinition;
 
 import static org.assertj.core.api.Assertions.*;
+
+import java.util.List;
+
 import base.SetUpTest;
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -24,12 +28,20 @@ public class TestingSteps extends SetUpTest {
 
 	}
 
+	@When("^User enters the following credentials$")
+	public void user_enters_the_following_credentials(DataTable table) throws Throwable {
 	
-	@When("^User enters \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void user_enters_and(String userName, String PassWord) throws Throwable {
-
+		List<List<String>> data = table.raw();
+		System.out.println("O valor é: " + data.get(0).get(0).toString());
+		System.out.println("O valor é: " + data.get(0).get(1).toString());
+		
+		//primeiro get eh linha segundo get eh coluna
+		
 		SignUpPage signPage = new SignUpPage(driver);
-		signPage.inserirDadosLogin(userName, PassWord);
+		signPage.inserirDadosLogin(data.get(1).get(0).toString(), data.get(1).get(1).toString());
+		
+		
+
 	}
 
 

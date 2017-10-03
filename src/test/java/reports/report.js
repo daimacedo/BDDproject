@@ -21,21 +21,37 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "User enters \"test@email.com\" and \"abcabc\"",
+  "name": "User enters the following credentials",
+  "rows": [
+    {
+      "cells": [
+        "email",
+        "senha"
+      ],
+      "line": 7
+    },
+    {
+      "cells": [
+        "test@email.com",
+        "abcabc"
+      ],
+      "line": 8
+    }
+  ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
+  "line": 9,
   "name": "User clicks on GO button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 8,
+  "line": 10,
   "name": "He can visit the practice page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
+  "line": 11,
   "name": "A message is displayed",
   "keyword": "And "
 });
@@ -43,45 +59,35 @@ formatter.match({
   "location": "TestingSteps.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 9814275964,
+  "duration": 9489882318,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "test@email.com",
-      "offset": 13
-    },
-    {
-      "val": "abcabc",
-      "offset": 34
-    }
-  ],
-  "location": "TestingSteps.user_enters_and(String,String)"
+  "location": "TestingSteps.user_enters_the_following_credentials(DataTable)"
 });
 formatter.result({
-  "duration": 335865333,
+  "duration": 381094097,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.user_clicks_on_GO_button()"
 });
 formatter.result({
-  "duration": 250040108,
+  "duration": 256861187,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.he_can_visit_the_practice_page()"
 });
 formatter.result({
-  "duration": 5832717878,
+  "duration": 5779563891,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.a_message_is_displayed()"
 });
 formatter.result({
-  "duration": 489919888,
+  "duration": 558480302,
   "status": "passed"
 });
 });
