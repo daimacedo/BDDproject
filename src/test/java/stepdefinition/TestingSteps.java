@@ -1,13 +1,10 @@
 package stepdefinition;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import static org.assertj.core.api.Assertions.*;
 import base.SetUpTest;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import junit.framework.Assert;
 import pages.HomePage;
 import pages.PracticePage;
 import pages.SignUpPage;
@@ -27,12 +24,14 @@ public class TestingSteps extends SetUpTest {
 
 	}
 
-	@When("^User enters username and password$")
-	public void user_enters_username_and_password() throws Throwable {
-		
+	
+	@When("^User enters \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enters_and(String userName, String PassWord) throws Throwable {
+
 		SignUpPage signPage = new SignUpPage(driver);
-		signPage.inserirDadosLogin("test@email.com", "abcabc");
+		signPage.inserirDadosLogin(userName, PassWord);
 	}
+
 
 	@When("^User clicks on GO button$")
 	public void user_clicks_on_GO_button() throws Throwable {
