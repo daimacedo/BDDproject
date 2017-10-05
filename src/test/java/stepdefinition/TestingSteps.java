@@ -28,22 +28,14 @@ public class TestingSteps extends SetUpTest {
 
 	}
 
-	@When("^User enters the following credentials$")
-	public void user_enters_the_following_credentials(DataTable table) throws Throwable {
 	
-		List<List<String>> data = table.raw();
-		System.out.println("O valor é: " + data.get(0).get(0).toString());
-		System.out.println("O valor é: " + data.get(0).get(1).toString());
-		
-		//primeiro get eh linha segundo get eh coluna
-		
+	@When("^User enters the \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enters_the_and(String email, String senha) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
 		SignUpPage signPage = new SignUpPage(driver);
-		signPage.inserirDadosLogin(data.get(1).get(0).toString(), data.get(1).get(1).toString());
-		
-		
-
+		signPage.inserirDadosLogin(email, senha);
+	
 	}
-
 
 	@When("^User clicks on GO button$")
 	public void user_clicks_on_GO_button() throws Throwable {
