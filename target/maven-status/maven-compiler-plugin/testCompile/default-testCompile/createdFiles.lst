@@ -1,6 +1,6 @@
-pages/HomePage.class
-stepdefinition/TestingSteps.class
-base/SetUpTest.class
 pages/SignUpPage.class
 pages/PracticePage.class
+pages/HomePage.class
 tests/RunTest.class
+stepdefinition/TestingSteps.class
+base/SetUpTest.class

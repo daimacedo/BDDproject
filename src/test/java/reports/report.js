@@ -113,7 +113,7 @@ formatter.match({
   "location": "TestingSteps.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 12050249114,
+  "duration": 8543938894,
   "status": "passed"
 });
 formatter.match({
@@ -130,28 +130,28 @@ formatter.match({
   "location": "TestingSteps.user_enters_the_and(String,String)"
 });
 formatter.result({
-  "duration": 289532171,
+  "duration": 279859358,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.user_clicks_on_GO_button()"
 });
 formatter.result({
-  "duration": 282330249,
+  "duration": 253643872,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.he_can_visit_the_practice_page()"
 });
 formatter.result({
-  "duration": 6069965410,
+  "duration": 5674821051,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.a_message_is_displayed()"
 });
 formatter.result({
-  "duration": 820691199,
+  "duration": 386164202,
   "status": "passed"
 });
 formatter.scenario({
@@ -195,7 +195,7 @@ formatter.match({
   "location": "TestingSteps.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 9575479927,
+  "duration": 7530542369,
   "status": "passed"
 });
 formatter.match({
@@ -212,28 +212,28 @@ formatter.match({
   "location": "TestingSteps.user_enters_the_and(String,String)"
 });
 formatter.result({
-  "duration": 499632951,
+  "duration": 254250612,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.user_clicks_on_GO_button()"
 });
 formatter.result({
-  "duration": 345892043,
+  "duration": 254208328,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.he_can_visit_the_practice_page()"
 });
 formatter.result({
-  "duration": 5970280982,
+  "duration": 5726893819,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.a_message_is_displayed()"
 });
 formatter.result({
-  "duration": 695850840,
+  "duration": 347483949,
   "status": "passed"
 });
 });
