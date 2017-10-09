@@ -94,6 +94,23 @@
 			<artifactId>guava</artifactId>
 			<version>22.0</version>
 		</dependency>
+<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+<!--  <dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>mssql-jdbc</artifactId>
+    <version>6.3.3.jre8-preview</version>
+    <scope>test</scope>
+</dependency>-->
+<!-- https://mvnrepository.com/artifact/net.sourceforge.jtds/jtds -->
+<!-- https://mvnrepository.com/artifact/net.sourceforge.jtds/jtds -->
+<!-- https://mvnrepository.com/artifact/net.sourceforge.jtds/jtds -->
+<dependency>
+    <groupId>net.sourceforge.jtds</groupId>
+    <artifactId>jtds</artifactId>
+    <version>1.2.6</version>
+</dependency>
+
+
 
 
 	</dependencies>
