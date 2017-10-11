@@ -43,35 +43,35 @@ formatter.match({
   "location": "TestingSteps.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 22298373715,
+  "duration": 9281571384,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.user_enters_username_and_password()"
 });
 formatter.result({
-  "duration": 274001726,
+  "duration": 485247609,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.user_clicks_on_GO_button()"
 });
 formatter.result({
-  "duration": 247632668,
+  "duration": 268521067,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.he_can_visit_the_practice_page()"
 });
 formatter.result({
-  "duration": 3725019028,
+  "duration": 5854977241,
   "status": "passed"
 });
 formatter.match({
   "location": "TestingSteps.a_message_is_displayed()"
 });
 formatter.result({
-  "duration": 481523471,
+  "duration": 511858672,
   "status": "passed"
 });
 });

@@ -7,34 +7,35 @@ import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-
 public class SetUpTest {
-	
 
-	protected static WebDriver driver;
-	protected static String baseUrl;
-	
-	@BeforeClass
-	public static void SetUp(String url) {
-		
-		System.setProperty("webdriver.gecko.driver", "/home/daiane.macedo/workspace2/cucumber/resources/seleniumDrivers/geckodriver");
-		
-		//System.setProperty("webdriver.gecko.driver", "/home/daiane.macedo/Desktop/phaton/phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
-		
-		
+	private final WebDriver driver;
+	private String baseUrl;
+
+	public SetUpTest() {
+		System.setProperty("webdriver.gecko.driver","/home/daiane.macedo/workspace2/cucumber/resources/seleniumDrivers/geckodriver");
 		driver = new FirefoxDriver();
+	}
+
+	@BeforeClass
+	public void SetUp(String url) {
+		
+		// System.setProperty("webdriver.gecko.driver",
+		// "/home/daiane.macedo/Desktop/phaton/phantomjs-2.1.1-linux-x86_64/bin/phantomjs");
+
 		baseUrl = url;
 		// driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(url);
 
-		
 	}
-	
+
 	@AfterClass
-	public static void TearDown()
-	{
+	public void TearDown() {
 		driver.quit();
 	}
 
+	public WebDriver getDriver() {
+		return driver;
+	}
 }
