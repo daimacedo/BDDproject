@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		monochrome = true, 
 		features = "src/test/java/feature", 
 		glue = { "stepdefinition" }, 
-		plugin = {"pretty", "html:src/test/java/reports" })
+		plugin = {"pretty", "json:src/test/java/reports/report.json" })
 
 public class RunTest {
 	
